@@ -1,4 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
+
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
@@ -22,7 +23,7 @@ function checkGuess() {
     } else {
         lastResult.textContent = 'Wrong!';
         lastResult.style.backgroundColor = 'red';
-        if (userGuess < randomNumeber) {
+        if (userGuess < randomNumber) {
             lowOrHi.textContent = 'Too low!';
         } else {
             lowOrHi.textContent = 'Too hight!'
